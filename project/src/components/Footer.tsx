@@ -16,17 +16,17 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <footer className="bg-gray-900 text-white w-full overflow-x-hidden">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 mb-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Zap className="h-8 w-8 text-blue-400" />
-              <span className="text-2xl font-bold">ModernWeb</span>
+              <Zap className="h-6 w-6 sm:h-8 sm:w-8 text-blue-400" />
+              <span className="text-xl sm:text-2xl font-bold">ModernWeb</span>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
+            <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed max-w-md">
               Creating beautiful, functional, and responsive digital experiences 
               that help businesses grow and succeed in the modern world.
             </p>
@@ -47,13 +47,13 @@ const Footer: React.FC = () => {
           {/* Footer Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h3 className="font-semibold text-lg mb-4">{category}</h3>
+              <h3 className="font-semibold text-sm sm:text-base mb-4">{category}</h3>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
                     <a
                       href="#"
-                      className="text-gray-400 hover:text-white transition-colors duration-200"
+                      className="text-sm sm:text-base text-gray-400 hover:text-white transition-colors duration-200"
                     >
                       {link}
                     </a>

@@ -83,18 +83,18 @@ const Features: React.FC = () => {
   }, []);
 
   return (
-    <section id="features" ref={sectionRef} className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="features-title text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+    <section id="features" ref={sectionRef} className="w-full py-12 sm:py-16 md:py-24 bg-white overflow-x-hidden">
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="features-title text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4">
             Why Choose Our Platform?
           </h2>
-          <p className="features-title text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="features-title text-sm sm:text-base md:text-lg text-gray-600 max-w-3xl mx-auto px-2">
             Discover the features that make our platform the perfect choice for your next project
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <div
               key={index}

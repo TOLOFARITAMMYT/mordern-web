@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative w-screen min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div
         ref={heroRef}
@@ -64,10 +64,10 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-3 sm:px-6 lg:px-8 text-center">
         <h1
           ref={headlineRef}
-          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+          className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight"
         >
           Build Amazing
           <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
@@ -77,24 +77,24 @@ const Hero: React.FC = () => {
 
         <p
           ref={subheadlineRef}
-          className="text-base sm:text-lg md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-sm xs:text-base sm:text-lg md:text-2xl text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2"
         >
           Create stunning websites and applications with modern technologies. 
           Fast, responsive, and built for the future.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center w-full px-2">
           <button
             ref={buttonRef}
-            className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center space-x-2"
+            className="group bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-5 py-2.5 sm:px-8 sm:py-4 rounded-full text-sm sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center space-x-2 w-full sm:w-auto whitespace-nowrap"
           >
             <span>Get Started</span>
-            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+            <ArrowRight className="h-4 sm:h-5 w-4 sm:w-5 group-hover:translate-x-1 transition-transform duration-200" />
           </button>
 
-          <button className="group flex items-center space-x-2 text-white hover:text-blue-300 px-4 py-3 sm:px-6 sm:py-4 rounded-full border-2 border-white/30 hover:border-blue-300 transition-all duration-300 text-base">
-            <Play className="h-5 w-5 group-hover:scale-110 transition-transform duration-200" />
-            <span className="text-lg">Watch Demo</span>
+          <button className="group flex items-center justify-center space-x-2 text-white hover:text-blue-300 px-5 py-2.5 sm:px-6 sm:py-4 rounded-full border-2 border-white/30 hover:border-blue-300 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto whitespace-nowrap">
+            <Play className="h-4 sm:h-5 w-4 sm:w-5 group-hover:scale-110 transition-transform duration-200" />
+            <span>Watch Demo</span>
           </button>
         </div>
       </div>
